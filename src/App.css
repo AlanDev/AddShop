@@ -1,0 +1,26 @@
+#app {
+  display: grid;
+  grid-template-areas: 
+  "aside main main"
+  "footer footer footer"
+  ;
+  grid-template-columns: 350px 1fr;
+  grid-template-rows: 1fr auto;
+  overflow: auto;
+}
+
+/*hacer responsive la app , el aside debe ir arriba , main debe ir abajo*/
+@media (max-width: 768px) {
+  #app {
+    grid-template-areas: 
+    "aside"
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
+  }
+}
+  
+
+
+
+
